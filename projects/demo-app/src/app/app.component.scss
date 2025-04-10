@@ -1,0 +1,76 @@
+/* Spacer для правого выравнивания */
+/* Темная тема */
+
+.spacer {
+  flex: 1 1 auto;
+}
+.main-content {
+  padding: 20px;
+}
+
+.main-container {
+  height: calc(100% - 56px);
+  background-color: var(--bg); /* Dark blue background */
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Верхняя панель */
+.top-navbar {
+  height: 56px;
+  background-color: var(--bg2);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+/* Sidenav */
+mat-sidenav {
+  background-color: var(--bg2); /* Azure dark */
+  color: var(--text-color);
+  width: 240px;
+  padding-top: 16px;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+}
+
+mat-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Навигационные ссылки */
+mat-sidenav a {
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border-radius: 32px;
+  transition: background-color 0.2s ease;
+  width: 90%;
+}
+
+mat-sidenav a:hover {
+  background-color: #2563eb; /* Blue hover */
+  color: var(--text-color);
+}
+
+mat-sidenav a.active {
+  background-color: #1d4ed8;
+  color: var(--text-color);
+}
+
+/* Контентная часть */
+mat-sidenav-content {
+  background-color: var(--bg);
+  padding: 24px;
+  color: var(--text-color);
+}

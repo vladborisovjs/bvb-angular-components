@@ -1,0 +1,24 @@
+@use "../styles/themes.scss";
+@use "@angular/material/prebuilt-themes/pink-bluegrey.css";
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+mat-sidenav {
+  border-right-color: var(--border-color) !important;
+}
+
+mat-nav-list {
+  .mdc-list-item__primary-text {
+    color: var(--text-color);
+  }
+}
+mat-slide-toggle {
+  label {
+    color: var(--text-color);
+  }
+}
