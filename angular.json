@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/bvb-lib",
       "sourceRoot": "projects/bvb-lib/src",
-      "prefix": "lib",
+      "prefix": "bvb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -38,10 +38,16 @@
     },
     "demo-app": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "skipTests": true,
+          "changeDetection": "OnPush",
+          "style": "scss"
+        }
+      },
       "root": "projects/demo-app",
       "sourceRoot": "projects/demo-app/src",
-      "prefix": "app",
+      "prefix": "bvb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",

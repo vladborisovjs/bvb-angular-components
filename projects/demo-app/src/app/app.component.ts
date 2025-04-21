@@ -5,8 +5,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { NavItems } from '../shared/nav-items';
 @Component({
-  selector: 'app-root',
+  selector: 'bvb-root',
+  standalone: true,
   imports: [
     CommonModule,
     MatSlideToggleModule,
@@ -21,11 +23,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   isDarkTheme = true;
-  navItems = [
-    { path: 'component', label: 'My Component' },
-    { path: 'component', label: 'My Component2' },
-    { path: 'component', label: 'My Component3' },
-  ];
+  navItems = NavItems;
   constructor(private renderer: Renderer2) {}
   toggleTheme(): void {
     this.isDarkTheme = !this.isDarkTheme;
@@ -39,7 +37,6 @@ export class AppComponent implements OnInit {
     }
   }
 
-  
   ngOnInit(): void {
     this.renderer.addClass(document.body, 'dark-theme'); // начальная тема
   }

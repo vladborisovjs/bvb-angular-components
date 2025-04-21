@@ -2,10 +2,19 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'component',
+    path: '',
+    redirectTo: '/components/overview',
+    pathMatch: 'full',
+  },
+  {
+    path: 'components/overview',
     loadComponent: () =>
-      import('../../../bvb-lib/src/lib/bvb-lib.component').then(
-        (m) => m.BvbLibComponent
+      import('./pages/overview/overview.component').then(
+        (c) => c.OverviewComponent
       ),
   },
+  {
+    path: 'components/tooltip',
+    loadComponent: () => import('../../../bvb-lib/src/lib/tooltip/tooltip.component').then((c) => c.TooltipComponent)
+  }
 ];

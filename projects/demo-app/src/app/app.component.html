@@ -1,5 +1,7 @@
 <mat-toolbar class="top-navbar">
-  <span>Angular Components</span>
+  <span class="title" routerLink="/components/overview"
+    >Angular Components</span
+  >
   <span class="spacer"></span>
   <mat-slide-toggle [checked]="isDarkTheme" (change)="toggleTheme()">{{
     isDarkTheme ? "Dark Mode" : "Light Mode"
