@@ -1,4 +1,5 @@
 <mat-toolbar class="top-navbar">
+  <img src="assets/img/bvb-image.png" alt="" />
   <span class="title" routerLink="/components/overview"
     >Angular Components</span
   >
@@ -10,9 +11,11 @@
 <mat-sidenav-container class="main-container">
   <mat-sidenav mode="side" opened>
     <mat-nav-list>
-      <a mat-list-item *ngFor="let item of navItems" [routerLink]="item.path">
+      @for (item of navItems; track $index) {
+      <a mat-list-item [routerLink]="item.path">
         {{ item.label }}
       </a>
+      }
     </mat-nav-list>
   </mat-sidenav>
 

@@ -1,6 +1,8 @@
 body.dark-theme {
   --bg: #07090a;
   --bg2: #1b1c1c;
+  --bg-card-footer: #1b1c1c;
+  --bg-card-body: #49414147;
   --border-color: #666b73;
   --text-color: white;
   --nav: #1e293b;
@@ -12,6 +14,8 @@ body.dark-theme {
 body.light-theme {
   --bg: #f0f4f8;
   --bg2: #f0f4f8;
+  --bg-card-footer: #d9d9d9;
+  --bg-card-body: #f0f4f8;
   --border-color: #666b73;
   --text-color: black;
   --nav: #e2e8f0;
