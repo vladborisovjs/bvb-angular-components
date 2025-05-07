@@ -4,9 +4,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "bvb-lib": [
-        "./dist/bvb-lib"
-      ]
+      "bvb-lib": ["./dist/bvb-lib"],
+      "bvb-lib/*": ["./dist/bvb-lib/*"]
     },
     "outDir": "./dist/out-tsc",
     "strict": true,

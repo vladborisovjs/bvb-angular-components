@@ -1,11 +1,11 @@
 <div class="example-container">
-  <input type="text" />
-  <div class="test-div"></div>
-  <button>Наведи</button>
-  <textarea name="" rows="3" cols="10" id=""></textarea>
-  <label for="pet-select">Choose a pet:</label>
+  <input type="text" [bvbTooltip]="'Тест'" />
+  <div class="test-div" [bvbTooltip]="'Тест'"></div>
+  <button [bvbTooltip]="'Тест'">Наведи</button>
+  <textarea name="" rows="3" cols="10" id="" [bvbTooltip]="'Тест'"></textarea>
+  <label for="pet-select" [bvbTooltip]="'Тест'">Choose a pet:</label>
 
-  <select name="pets" id="pet-select">
+  <select name="pets" id="pet-select" [bvbTooltip]="'Тест'">
     <option value="">--Please choose an option--</option>
     <option value="dog">Dog</option>
     <option value="cat">Cat</option>
@@ -14,6 +14,6 @@
     <option value="spider">Spider</option>
     <option value="goldfish">Goldfish</option>
   </select>
-  <input type="checkbox" />
-  <input type="radio" />
+  <input type="checkbox" [bvbTooltip]="'Тест'" />
+  <input type="radio" [bvbTooltip]="'Тест'" />
 </div>
