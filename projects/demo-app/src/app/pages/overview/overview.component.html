@@ -2,7 +2,7 @@
   @for (item of navItems; track $index) {
   <div class="card" [routerLink]="item.path">
     <div class="card-body">
-      <img src="assets/img/tooltip.png" alt="" />
+      <img [src]="item.img" alt="" />
     </div>
     <div class="card-footer">
       <h1>{{ item.label }}</h1>

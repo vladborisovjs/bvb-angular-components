@@ -15,6 +15,9 @@ export const routes: Routes = [
   },
   {
     path: 'components/tooltip',
-    loadComponent: () => import('../../../bvb-lib/src/lib/tooltip/tooltip.component').then((c) => c.TooltipComponent)
-  }
+    loadComponent: () =>
+      import('../app/examples/tooltip/tooltip.component').then(
+        (c) => c.TooltipComponent
+      ),
+  },
 ];
